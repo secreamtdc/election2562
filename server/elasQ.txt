@@ -1,0 +1,148 @@
+GET elect62/default/_search
+GET myindex/default/_search
+#นับ
+GET elect62/default/_count
+POST myindex/default
+{
+  "name": "Processing Events with Logstash",
+  "instructor": {
+    "firstName": "Tim",
+    "lastName": "Tana"
+  }
+}
+#อนาคตใหม่
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "อนาคตใหม่","ฟ้ารักพ่อ","พ่อของฟ้า","ธนาธร" ,"อ.น.ค" ,"อนค"  ]
+    }
+  }
+}
+#พรรคเพื่อไทย
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "เพื่อไทย","พท","คุณหญิงสุดารัตน์"]
+    }
+  }
+}
+#ประชาธิปัตย์ 
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ประชาธิปัตย์","อภิสิทธิ์ เวชชาชีวะ","ปชป"]
+    }
+  }
+}
+#พลังประชารัฐ
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ลุงตุ่","พลังประชารัฐ","พปชร"]
+    }
+  }
+}
+#พรรคภูมิใจไทย 
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ภูมิใจไทย"]
+    }
+  }
+}
+#ชาติไทยพัฒนา
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ชาติไทยพัฒนา"]
+    }
+  }
+}
+#ชาติพัฒนา
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ชาติพัฒนา"]
+    }
+  }
+}
+#ประชาชาติ
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ประชาชาติ"]
+    }
+  }
+}
+#เสรีรวมไทย
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "เสรีรวมไทย"]
+    }
+  }
+}
+#เศรษฐกิจใหม่
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "เศรษฐกิจใหม่"]
+    }
+  }
+}
+#เพื่อชาติ 
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "เพื่อชาติ"]
+    }
+  }
+}
+#รวมพลังประชาชาติไทย
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "รวมพลังประชาชาติไทย"]
+    }
+  }
+}
+#พลังท้องถิ่นไท
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "พลังท้องถิ่นไท"]
+    }
+  }
+}
+#ไทยรักษาชาติ
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "ไทยรักษาชาติ"]
+    }
+  }
+}
+#test
+GET /elect62/default/_search
+{
+  "query": {
+    "terms": {
+      "data.text": [ "พท"]
+    }
+  }
+}
+
